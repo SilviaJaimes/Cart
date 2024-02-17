@@ -5,7 +5,7 @@ import Footers from './components/Footers.jsx';
 import { IS_DEVELOPMENT } from './config.js';
 import useFilters from './hooks/useFilters.js';
 import { CartProvider } from './context/cart.jsx';
-import NavbarPrincipal from './components/NavbarPrinciapl.jsx';
+import NavbarPrincipal from './components/NavbarPrincipal.jsx';
 
 export default function App() {
   const { filterProducts } = useFilters();
