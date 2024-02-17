@@ -1,4 +1,4 @@
-import { createContext, useState } from "react"; 
+import { createContext, useState } from "react";
 
 // Esto es lo que se consume
 export const FiltersContext = createContext();
@@ -10,7 +10,7 @@ export function FiltersProvider({ children }) {
         minPrice: 0
     });
 
-    return(
+    return (
         <FiltersContext.Provider value={{
             filters, setFilters
         }}
@@ -18,4 +18,4 @@ export function FiltersProvider({ children }) {
             {children}
         </FiltersContext.Provider>
     );
-}
+};

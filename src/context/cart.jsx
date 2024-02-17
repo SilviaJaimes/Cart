@@ -1,5 +1,5 @@
-import { createContext, useReducer } from "react"; 
-import { cartReducer, cartInitialState } from "../reducers/cart"; 
+import { createContext, useReducer } from "react";
+import { cartReducer, cartInitialState } from "../reducers/cart";
 
 export const CartContext = createContext();
 
@@ -20,13 +20,13 @@ function useCartReducer() {
         type: 'CLEAR_CART'
     });
 
-    return { state, addToCart, removeFromCart, clearCart }
-}
+    return { state, addToCart, removeFromCart, clearCart };
+};
 
-export function CartProvider ({children}) {
+export function CartProvider({ children }) {
     const { state, addToCart, removeFromCart, clearCart } = useCartReducer();
 
-    return(
+    return (
         <CartContext.Provider value={{
             cart: state,
             addToCart,
@@ -36,4 +36,4 @@ export function CartProvider ({children}) {
             {children}
         </CartContext.Provider>
     );
-}
+};
