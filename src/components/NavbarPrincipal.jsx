@@ -28,9 +28,11 @@ export default function NavbarPrincipal() {
 
             <NavbarContent justify="end">
                 <NavbarItem className="hidden lg:flex">
-                    <Button isIconOnly className="bg-transparent text-[25px] hover:text-white transition-all duration-300">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </Button>
+                    <a href="#footer">
+                        <Button isIconOnly className="bg-transparent text-[25px] hover:text-white transition-all duration-300">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </Button>
+                    </a>
                 </NavbarItem>
                 <NavbarItem className="hidden lg:flex">
                     <Cart />

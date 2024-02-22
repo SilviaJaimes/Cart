@@ -1,6 +1,6 @@
 export default function Footers() {
     return(
-        <footer className="grid grid-cols-1 p-14 mt-8 gap-10 bg-black md:grid-cols-2">
+        <footer className="grid grid-cols-1 p-14 mt-8 gap-10 bg-black md:grid-cols-2" id="footer">
                 <div>
                     <p className="text-white text-[18px]">Technical React test</p>
                     <p className="text-white text-[18px]">Sopping cart with useContext and useReducer</p>
